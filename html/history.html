@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <table class="content-table">
-        <tr>
-            <th>Date</th>
-            <th>Adults</th>
-            <th>Children</th>
-            <th>Phone number</th>
-            <th>Option</th>
-        </tr>
-        <thead>
-            <tbody>
-                <tr>
-                    <td>17/06/2024</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>0908058288</td>
-                    <td>6 days</td>
-                </tr>
-                <tr class="active-row">
-                    <td>10/04/2025</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>0910042010</td>
-                    <td>3 days</td>
-                </tr>
-                <tr>
-                    <td>05/04/2025</td>
-                    <td>2</td>
-                    <td>2</td>
-                    <td>0967129098</td>
-                    <td>4 days</td>
-                </tr>
-            </tbody>
-        </thead>
-    </table>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/history.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="../index.html">Phu My Villa</a></div>
+        <ul>
+          <li><a href="../index.html#home">home</a></li>
+          <li><a href="../index.html#book">book</a></li>
+          <li><a href="../index.html#about">about</a></li>
+          <li><a href="../html/history.html">history</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="search">
+        <form>
+          <input type="text" placeholder="Type your phone" id="search_inp" />
+          <button id="search_submit">Search</button>
+        </form>
+      </section>
+
+      <section id="table">
+        <div class="no_found">
+          <img
+            src="https://img.freepik.com/free-vector/hand-drawn-no-data-concept_52683-127823.jpg"
+            alt="no found data"
+          />
+          <p>You didn't book yet, <a href="../index.html#book">try now</a></p>
+        </div>
+
+        <table class="content-table hidden">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Adults</th>
+              <th>Children</th>
+              <th>Phone number</th>
+              <th>Option</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="../js/history.js"></script>
+  </body>
 </html>
