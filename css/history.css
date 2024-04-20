@@ -39,3 +39,26 @@
 .hidden {
     display: none;
 }
+
+#table .no_found {
+    padding-top: 25px;
+    padding-left: 100px;
+    align-items: center;
+}
+
+#table {
+    padding-top: 150px;
+    padding-left: 550px;
+}
+
+#search_inp {
+    width: 750px;
+}
+
+#search {
+    margin: 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
