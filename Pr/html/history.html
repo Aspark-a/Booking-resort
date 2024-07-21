@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/history.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="../index.html">Phu My Villa</a></div>
+        <ul>
+          <li><a href="../index.html#home">home</a></li>
+          <li><a href="../index.html#book">book</a></li>
+          <li><a href="../index.html#about">about</a></li>
+          <li><a href="../html/history.html">history</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="search">
+        <form>
+          <input type="text" placeholder="Type your phone" id="search_inp" />
+          <button id="search_submit">Search</button>
+        </form>
+      </section>
+
+      <section id="table">
+        <div class="no_found">
+          <img
+            src="https://img.freepik.com/free-vector/hand-drawn-no-data-concept_52683-127823.jpg"
+            alt="no found data"
+          />
+          <p>You didn't book yet, <a href="../index.html#book">try now</a></p>
+        </div>
+
+        <table class="content-table hidden">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Adults</th>
+              <th>Children</th>
+              <th>Phone number</th>
+              <th>Option</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="../js/history.js"></script>
+  </body>
+</html>
