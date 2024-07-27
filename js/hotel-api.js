@@ -11,7 +11,7 @@ async function getHotelList() {
         headers: {
             'accept': 'application/vnd.amadeus+json',
             'Content-Type': 'application/x-www-form-urlencoded',
-          'Authorization': 'Bearer rHYLrKVTNhJOf7mFENurNCSe9Bku'
+          'Authorization': 'Bearer es1G7DTSgp6SOUXlpRQAOqX3GU7n'
         },
       }
     );
