@@ -24,6 +24,7 @@
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/home.css" />
 
@@ -204,55 +205,131 @@
         </button>
       </div>
     </section>
-    <section class="map" id="location">
-      <div class="lct">
-        <header>CHECK OUR LOCATION</header>
-
-        <div id="map" style="height: 500px"></div>
-
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-        <script>
-          var map = L.map("map").setView([10.583426, 107.074882], 13);
-    
-          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-            attribution:
-              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-          }).addTo(map);
-    
-          map.locate({ setView: true, maxZoom: 16 });
-    
-          function onLocationFound(e) {
-            var radius = e.accuracy / 2;
-    
-            L.marker(e.latlng)
-              .addTo(map)
-              .bindPopup("You are within " + radius + " meters from this point")
-              .openPopup();
-    
-            L.circle(e.latlng, radius).addTo(map);
-          }
-    
-          map.on("locationfound", onLocationFound);
-    
-          function onLocationError(e) {
-            alert(e.message);
-          }
-    
-          map.on("locationerror", onLocationError);
-        </script>
-
-      </div>
 
         <!-- API JS -->
          <script src="./js/api.js"></script>
-    </section>
-    <footer>
-      <section id="contact" class="footer">
-        <div>
-          <header>CONTACT US</header>
-        </div>
+
+         <section class="contact_us">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                      <div class="contact_inner">
+                          <div class="row">
+                              <div class="col-md-10">
+                                  <div class="contact_form_inner">
+                                      <div class="contact_field">
+                                          <h3>Contatc Us</h3>
+                                          <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
+                                          <input type="text" class="form-control form-group" placeholder="Name" />
+                                          <input type="text" class="form-control form-group" placeholder="Email" />
+                                          <textarea class="form-control form-group" placeholder="Message"></textarea>
+                                          <button class="contact_form_submit">Send</button>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-2">
+                                  <div class="right_conatct_social_icon d-flex align-items-end">
+                                     <div class="socil_item_inner d-flex">
+                                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                     </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="contact_info_sec">
+                              <h4>Contact Info</h4>
+                              <div class="d-flex info_single align-items-center">
+                                  <i class="fas fa-headset"></i>
+                                  <span>+91 8009 054294</span>
+                              </div>
+                              <div class="d-flex info_single align-items-center">
+                                  <i class="fas fa-envelope-open-text"></i>
+                                  <span>info@flightmantra.com</span>
+                              </div>
+                              <div class="d-flex info_single align-items-center">
+                                  <i class="fas fa-map-marked-alt"></i>
+                                  <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
+                              </div>
+              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </section>
-    </footer>
+      
+      <section class="map_sec">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                      <div class="map_inner">
+                          <h4>Find Us on Google Map</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
+                          <div class="map_bind">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592.2583556378115!2d107.07461703354939!3d10.583150068786368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175123ae227e8a1%3A0x3266cc7ff1daf036!2zxJDGsOG7nW5nIHPhu5EgMywgUGjDuiBN4bu5LCBUw6JuIFRow6BuaCwgQsOgIFLhu4thIC0gVsWpbmcgVMOgdSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1722781090275!5m2!1sen!2s" width="100%" height="450" frameborder="0"style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+  
+
+    </section>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
 
     <!-- add js files -->
     <script src="./js/booking.js"></script>
