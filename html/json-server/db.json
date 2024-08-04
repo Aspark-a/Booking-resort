@@ -1,0 +1,38 @@
+{
+    "admins": [
+      {
+        "id": "1",
+        "email": "abc@gmail.com",
+        "password": "120648"
+      },
+      {
+        "id": "2",
+        "email": "admin2@gmail.com",
+        "password": "abc123"
+      }
+    ],
+    "orders": [
+      {
+        "id": "1",
+        "arrival_date": "2024-04-17",
+        "adults": 2,
+        "children": 4,
+        "phone_num": "0199999999",
+        "type": "3dem",
+        "status": "dang xu ly",
+        "updated_date": "2024-04-17",
+        "updated_admin_id": "1"
+      },
+      {
+        "id": "2",
+        "arrival_date": "2024-12-12",
+        "adults": "12",
+        "children": "12",
+        "phone_num": "123456789",
+        "type": "5dem",
+        "status": "da huy",
+        "updated_date": "2024-13-12",
+        "updated_admin_id": 2
+      }
+    ]
+  }

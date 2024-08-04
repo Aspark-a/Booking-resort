@@ -20,4 +20,5 @@ signInForm.addEventListener('submit', (e) => {
   if (storedUser) {
     const storedUserObject = JSON.parse(storedUser);
     if (storedUserObject.username === username && storedUserObject.password === password)
-  }})
+      
+  

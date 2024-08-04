@@ -26,6 +26,11 @@
     ></script>
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/home.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  />
   </head>
 
   <body>
@@ -39,12 +44,56 @@
           <li><a href="./html/history.html">history</a></li>
           <li><a href="./index.html#contact">contact</a></li>
           <li><a href="./index.html#location">location</a></li>
-          <li><a href="./html/sign-up.html">sign up</a></li>
-          <li><a href="./html/sign-in.html">sign in</a></li>
+          <li><a id="admin" href="./html/sign-in.html">admin</a></li>
 
         </ul>
       </div>
     </nav>
+    <section id="home">
+      <div class="content">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="slidebg">
+              <img style="object-fit:cover" src="./asset/1.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h1>Spend your holiday</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn">CONTACT</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="slidebg">
+              <img style="object-fit:cover" src="./asset/2.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h1>Spend your holiday</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn">CONTACT</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="slidebg">
+              <img style="object-fit:cover" src="./asset/4.jpg" alt="" />
+            </div>
+            <div class="text">
+              <h1>Spend your holiday</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="secondary-btn">CONTACT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -156,8 +205,42 @@
       </div>
     </section>
     <section class="map" id="location">
-      <div>
+      <div class="lct">
         <header>CHECK OUR LOCATION</header>
+
+        <div id="map" style="height: 500px"></div>
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script>
+          var map = L.map("map").setView([10.583426, 107.074882], 13);
+    
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          }).addTo(map);
+    
+          map.locate({ setView: true, maxZoom: 16 });
+    
+          function onLocationFound(e) {
+            var radius = e.accuracy / 2;
+    
+            L.marker(e.latlng)
+              .addTo(map)
+              .bindPopup("You are within " + radius + " meters from this point")
+              .openPopup();
+    
+            L.circle(e.latlng, radius).addTo(map);
+          }
+    
+          map.on("locationfound", onLocationFound);
+    
+          function onLocationError(e) {
+            alert(e.message);
+          }
+    
+          map.on("locationerror", onLocationError);
+        </script>
+
       </div>
 
         <!-- API JS -->
