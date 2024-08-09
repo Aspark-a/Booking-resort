@@ -226,7 +226,7 @@ async function countNewId() {
     .catch((err) => console.log(err));
 }
 
-async function updateOrderInAPI() {}
+// async function updateOrderInAPI() {}
 
 function createOrderInAPI(order) {
   fetch(mainURL + `orders`, { method: "POST", body: JSON.stringify(order) })
@@ -234,4 +234,5 @@ function createOrderInAPI(order) {
     .catch((err) => console.log(err));
 }
 
+// sau 1 giay (sau khi trang web duoc mo) => load du lieu
 setTimeout(run, 1000);

@@ -15,17 +15,6 @@
   ],
   "orders": [
     {
-      "id": "3",
-      "arrival_date": "2024-08-09",
-      "adults": "0",
-      "children": "0",
-      "phone_num": "0",
-      "type": "3dem",
-      "status": "Dang_xu_ly",
-      "updated_date": "",
-      "updated_admin_id": "1"
-    },
-    {
       "id": "4",
       "arrival_date": "2024-08-09",
       "adults": "",
@@ -100,6 +89,17 @@
       "arrival_date": "2024-08-09",
       "type": "",
       "status": "",
+      "updated_date": "",
+      "updated_admin_id": "1"
+    },
+    {
+      "id": "12",
+      "arrival_date": "2024-08-09",
+      "adults": "1",
+      "children": "1",
+      "phone_num": "1234567890",
+      "type": "4dem",
+      "status": "Da_xac_nhan",
       "updated_date": "",
       "updated_admin_id": "1"
     }
