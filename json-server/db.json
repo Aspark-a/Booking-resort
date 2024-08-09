@@ -1,0 +1,107 @@
+{
+  "admins": [
+    {
+      "id": "1",
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "password": "120648"
+    },
+    {
+      "id": "2",
+      "username": "admin2",
+      "email": "admin2@gmail.com",
+      "password": "abc123"
+    }
+  ],
+  "orders": [
+    {
+      "id": "3",
+      "arrival_date": "2024-08-09",
+      "adults": "0",
+      "children": "0",
+      "phone_num": "0",
+      "type": "3dem",
+      "status": "Dang_xu_ly",
+      "updated_date": "",
+      "updated_admin_id": "1"
+    },
+    {
+      "id": "4",
+      "arrival_date": "2024-08-09",
+      "adults": "",
+      "children": "",
+      "phone_num": "",
+      "type": "",
+      "status": "",
+      "updated_date": "",
+      "updated_admin_id": "1"
+    },
+    {
+      "id": "5",
+      "arrival_date": "2024-08-09",
+      "adults": "",
+      "children": "",
+      "phone_num": "",
+      "type": "",
+      "status": "",
+      "updated_date": "",
+      "updated_admin_id": "1",
+      "null": null
+    },
+    {
+      "id": "6",
+      "arrival_date": "2024-08-09",
+      "adults": "",
+      "children": "",
+      "phone_num": "",
+      "type": "",
+      "status": "",
+      "updated_date": "",
+      "updated_admin_id": "1",
+      "null": null
+    },
+    {
+      "id": "7",
+      "arrival_date": "2024-08-09",
+      "adults": "",
+      "children": "",
+      "phone_num": "",
+      "type": "",
+      "status": "",
+      "updated_date": "",
+      "updated_admin_id": "1",
+      "null": null
+    },
+    {
+      "id": "8",
+      "arrival_date": "2024-08-09",
+      "adults": "",
+      "children": "",
+      "phone_num": "",
+      "type": "",
+      "status": "",
+      "updated_date": "",
+      "updated_admin_id": "1",
+      "null": "Da_xac_nhan"
+    },
+    {
+      "id": "10",
+      "arrival_date": "2024-08-09",
+      "adults": "1",
+      "children": "1",
+      "phone_num": "123456789",
+      "type": "4dem",
+      "status": "Da_xac_nhan",
+      "updated_date": "",
+      "updated_admin_id": "1"
+    },
+    {
+      "id": "11",
+      "arrival_date": "2024-08-09",
+      "type": "",
+      "status": "",
+      "updated_date": "",
+      "updated_admin_id": "1"
+    }
+  ]
+}

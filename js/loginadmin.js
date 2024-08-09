@@ -9,10 +9,10 @@ async function getadmins() {
 
 async function login() {
   //kiem tra form
-  //   const email = document.getElementById("email").value || "abc@gmail.com";
-  //   const password = document.getElementById("password").value || "123456";
-  const email = "abc@gmail.com";
-  const password = "120648";
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  // const email = "abc@gmail.com";
+  // const password = "120648";
   if (!email || !password) {
     alert("can nhap day du thong tin");
     return;
@@ -27,7 +27,7 @@ async function login() {
     return;
   }
   // luu du lieu vao loclaStorage
-  localStorage.setItem("currentUser", JSON.stringify(currentUser));
+  localStorage.setItem("current_admin", JSON.stringify(currentUser));
   location.href = "./admin.html";
 }
 
