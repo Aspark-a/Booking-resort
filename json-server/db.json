@@ -102,6 +102,17 @@
       "status": "Da_xac_nhan",
       "updated_date": "",
       "updated_admin_id": "1"
+    },
+    {
+      "id": "13",
+      "arrival_date": "2024-08-10",
+      "adults": "1",
+      "children": "1",
+      "phone_num": "1234567890",
+      "type": "5dem",
+      "status": "Dang_xu_ly",
+      "updated_date": "",
+      "updated_admin_id": null
     }
   ]
 }
