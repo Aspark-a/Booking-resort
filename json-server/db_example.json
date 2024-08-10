@@ -2,11 +2,13 @@
     "admins": [
       {
         "id": "1",
+        "username": "abc",
         "email": "abc@gmail.com",
         "password": "120648"
       },
       {
         "id": "2",
+        "username": "admin2",
         "email": "admin2@gmail.com",
         "password": "abc123"
       }
@@ -32,6 +34,17 @@
         "type": "5dem",
         "status": "da huy",
         "updated_date": "2024-13-12",
+        "updated_admin_id": 2
+      },
+      {
+        "id": "3",
+        "arrival_date": "2024-02-12",
+        "adults": "12",
+        "children": "12",
+        "phone_num": "123456789",
+        "type": "3dem",
+        "status": "da huy",
+        "updated_date": "2024-05-05",
         "updated_admin_id": 2
       }
     ]

@@ -12,30 +12,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <script
       src="https://code.jquery.com/jquery-1.12.4.min.js"
       integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./css/footer.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/home.css" />
 
     <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-  />
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
   </head>
 
   <body>
-    <nav class="navbar">
+    <nav class="my_navbar">
       <div class="navdiv">
         <div class="logo"><a href="./index.html">Phu My Villa</a></div>
         <ul>
@@ -45,293 +53,356 @@
           <li><a href="./html/history.html">history</a></li>
           <li><a href="./index.html#contact">contact</a></li>
           <li><a href="./index.html#location">location</a></li>
-          <li><a id="admin" href="./html/sign-in.html">admin</a></li>
-
+          <li><a id="admin" href="./html/sign-in.html" target="_blank">admin</a></li>
         </ul>
       </div>
     </nav>
-    <section id="home">
-      <div class="content">
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="slidebg">
-              <img style="object-fit:cover" src="./asset/1.jpg" alt="" />
-            </div>
-            <div class="text">
-              <h1>Spend your holiday</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="flex">
-                <button class="primary-btn">READ MORE</button>
-                <button class="secondary-btn">CONTACT</button>
+
+    <main>
+      <section id="home">
+        <div class="content">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="slidebg">
+                <img style="object-fit: cover" src="./asset/1.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h1>Spend your holiday</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex">
+                  <button class="btn btn-primary">READ MORE</button>
+                  <button class="btn btn-success">CONTACT</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="slidebg">
-              <img style="object-fit:cover" src="./asset/2.jpg" alt="" />
-            </div>
-            <div class="text">
-              <h1>Spend your holiday</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="flex">
-                <button class="primary-btn">READ MORE</button>
-                <button class="secondary-btn">CONTACT</button>
+            <div class="item">
+              <div class="slidebg">
+                <img style="object-fit: cover" src="./asset/2.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h1>Spend your holiday</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex">
+                  <button class="btn btn-primary">READ MORE</button>
+                  <button class="btn btn-success">CONTACT</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="slidebg">
-              <img style="object-fit:cover" src="./asset/4.jpg" alt="" />
-            </div>
-            <div class="text">
-              <h1>Spend your holiday</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <div class="flex">
-                <button class="primary-btn">READ MORE</button>
-                <button class="secondary-btn">CONTACT</button>
+            <div class="item">
+              <div class="slidebg">
+                <img style="object-fit: cover" src="./asset/4.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h1>Spend your holiday</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="flex">
+                  <button class="btn btn-primary">READ MORE</button>
+                  <button class="btn btn-success">CONTACT</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+
+      <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          dots: false,
+          navText: [
+            "<i class = 'fa fa-chevron-left'></i>",
+            "<i class = 'fa fa-chevron-right'></i>",
+          ],
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      </script>
+
+      <section id="book">
+        <div class="container flex-space">
+          <div class="text" style="width: 100%">
+            <h1><span>Book</span> Your Rooms</h1>
+          </div>
+          <div class="form">
+            <form class="grid">
+              <input id="Araival-Date" type="date" placeholder="Araival Date" />
+              <input id="Adults" type="number" placeholder="Adults" />
+              <input id="Children" type="number" placeholder="Children" />
+              <input id="Phone-number" type="text" placeholder="Phone number" />
+              <select name="type" id="type">
+                <option value="3dem">3 days</option>
+                <option value="4dem">4 days</option>
+                <option value="5dem">5 days</option>
+                <option value="6dem">6 days</option>
+              </select>
+              <input type="submit" value="BOOK" id="submit_form" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container flex">
+          <div class="left w-80">
+            <div class="heading">
+              <h1>WELCOME</h1>
+              <h2>Phu My Villa</h2>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloremque tempora culpa iusto quia nostrum minima, at id vel
+              obcaecati unde cum ex, illum sed odio eveniet quas rem cupiditate
+              incidunt.
+            </p>
+            <button
+              type="button"
+              class="btn btn-success"
+              onclick="location.href = './index.html#about' "
+            >
+              ABOUT US
+            </button>
+          </div>
+          <div class="right" style="margin-left: 40px">
+            <img src="./asset/3.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="counter">
+        <div class="container grid-4">
+          <div class="box">
+            <h1>140$</h1>
+            <hr />
+            <span>3 đêm</span>
+          </div>
+          <div class="box">
+            <h1>145$</h1>
+            <hr />
+            <span>4 đêm</span>
+          </div>
+          <div class="box">
+            <h1>175$</h1>
+            <hr />
+            <span>5 đêm</span>
+          </div>
+          <div class="box">
+            <h1>215$</h1>
+            <hr />
+            <span>6 đêm</span>
+          </div>
+        </div>
+        <div class="booking-div">
+          <button>
+            <li><a href="./index.html#book">Book now!</a></li>
+          </button>
+        </div>
+      </section>
+
+      <section id="contact" class="contact_us">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="contact_inner">
+                <div class="row">
+                  <div class="col-md-10">
+                    <div class="contact_form_inner">
+                      <div class="contact_field">
+                        <h3>Contatc Us</h3>
+                        <p>
+                          Feel Free to contact us any time. We will get back to
+                          you as soon as we can!.
+                        </p>
+                        <input
+                          type="text"
+                          class="form-control form-group"
+                          placeholder="Name"
+                        />
+                        <input
+                          type="text"
+                          class="form-control form-group"
+                          placeholder="Email"
+                        />
+                        <textarea
+                          class="form-control form-group"
+                          placeholder="Message"
+                        ></textarea>
+                        <button class="contact_form_submit">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div
+                      class="right_conatct_social_icon d-flex align-items-end"
+                    >
+                      <div class="socil_item_inner d-flex">
+                        <li>
+                          <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                          <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact_info_sec">
+                  <h4>Contact Info</h4>
+                  <div class="d-flex info_single align-items-center">
+                    <i class="fas fa-headset"></i>
+                    <span>+84 0908058288</span>
+                  </div>
+                  <div class="d-flex info_single align-items-center">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <span>peterphat1710@gmail.com</span>
+                  </div>
+                  <div class="d-flex info_single align-items-center">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span
+                      >1000+ Travel partners and 65+ Service city across India,
+                      USA, Canada & UAE</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="map_sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <div class="map_inner">
+                <h4>Find Us on Google Map</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Tempore quo beatae quasi assumenda, expedita aliquam minima
+                  tenetur maiores neque incidunt repellat aut voluptas hic
+                  dolorem sequi ab porro, quia error.
+                </p>
+                <div class="map_bind">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592.2583556378115!2d107.07461703354939!3d10.583150068786368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175123ae227e8a1%3A0x3266cc7ff1daf036!2zxJDGsOG7nW5nIHPhu5EgMywgUGjDuiBN4bu5LCBUw6JuIFRow6BuaCwgQsOgIFLhu4thIC0gVsWpbmcgVMOgdSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1722781090275!5m2!1sen!2s"
+                    width="100%"
+                    height="450"
+                    frameborder="0"
+                    style="border: 0"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
+              help the upcoming programmers with the code. Scanfcode focuses on
+              providing the most efficient code or snippets as the code wants to
+              be simple. We will help programmers build up concepts in different
+              programming languages that include C, C++, Java, HTML, CSS,
+              Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  >UI Design</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  >PHP</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  >Java</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/android/">Android</a>
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/templates/">Templates</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Contribute</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/privacy-policy/"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
       </div>
-    </section>
+    </footer>
 
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script>
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: false,
-        navText: [
-          "<i class = 'fa fa-chevron-left'></i>",
-          "<i class = 'fa fa-chevron-right'></i>",
-        ],
-        responsive: {
-          0: {
-            items: 1,
-          },
-          768: {
-            items: 1,
-          },
-          1000: {
-            items: 1,
-          },
-        },
-      });
-    </script>
-
-    <section id="book">
-      <div class="container flex-space">
-        <div class="text" style="width: 100%">
-          <h1><span>Book</span> Your Rooms</h1>
-        </div>
-        <div class="form">
-          <form class="grid">
-            <input id="Araival-Date" type="date" placeholder="Araival Date" />
-            <input id="Adults" type="number" placeholder="Adults" />
-            <input id="Children" type="number" placeholder="Children" />
-            <input id="Phone-number" type="text" placeholder="Phone number" />
-            <select name="type" id="type">
-              <option value="3dem">3 days</option>
-              <option value="4dem">4 days</option>
-              <option value="5dem">5 days</option>
-              <option value="6dem">6 days</option>
-            </select>
-            <input type="submit" value="BOOK" id="submit_form" />
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container flex">
-        <div class="left w-80">
-          <div class="heading">
-            <h1>WELCOME</h1>
-            <h2>Phu My Villa</h2>
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-            tempora culpa iusto quia nostrum minima, at id vel obcaecati unde
-            cum ex, illum sed odio eveniet quas rem cupiditate incidunt.
-          </p>
-          <button class="primary-btn">ABOUT US</button>
-        </div>
-        <div class="right" style="margin-left: 40px">
-          <img src="./asset/3.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="counter">
-      <div class="container grid-4">
-        <div class="box">
-          <h1>140$</h1>
-          <hr />
-          <span>3 đêm</span>
-        </div>
-        <div class="box">
-          <h1>145$</h1>
-          <hr />
-          <span>4 đêm</span>
-        </div>
-        <div class="box">
-          <h1>175$</h1>
-          <hr />
-          <span>5 đêm</span>
-        </div>
-        <div class="box">
-          <h1>215$</h1>
-          <hr />
-          <span>6 đêm</span>
-        </div>
-      </div>
-      <div class="booking-div">
-        <button>
-          <li><a href="./index.html#book">Book now!</a></li>
-        </button>
-      </div>
-    </section>
-
-        <!-- API JS -->
-         <script src="./js/api.js"></script>
-
-         <section class="contact_us">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                      <div class="contact_inner">
-                          <div class="row">
-                              <div class="col-md-10">
-                                  <div class="contact_form_inner">
-                                      <div class="contact_field">
-                                          <h3>Contatc Us</h3>
-                                          <p>Feel Free to contact us any time. We will get back to you as soon as we can!.</p>
-                                          <input type="text" class="form-control form-group" placeholder="Name" />
-                                          <input type="text" class="form-control form-group" placeholder="Email" />
-                                          <textarea class="form-control form-group" placeholder="Message"></textarea>
-                                          <button class="contact_form_submit">Send</button>
-                                      </div>
-                                  </div>
-                              </div>
-                              <div class="col-md-2">
-                                  <div class="right_conatct_social_icon d-flex align-items-end">
-                                     <div class="socil_item_inner d-flex">
-                                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                     </div>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="contact_info_sec">
-                              <h4>Contact Info</h4>
-                              <div class="d-flex info_single align-items-center">
-                                  <i class="fas fa-headset"></i>
-                                  <span>+84 0908058288</span>
-                              </div>
-                              <div class="d-flex info_single align-items-center">
-                                  <i class="fas fa-envelope-open-text"></i>
-                                  <span>peterphat1710@gmail.com</span>
-                              </div>
-                              <div class="d-flex info_single align-items-center">
-                                  <i class="fas fa-map-marked-alt"></i>
-                                  <span>1000+ Travel partners and 65+ Service city across India, USA, Canada & UAE</span>
-                              </div>
-              
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      
-      <section class="map_sec">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                      <div class="map_inner">
-                          <h4>Find Us on Google Map</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quo beatae quasi assumenda, expedita aliquam minima tenetur maiores neque incidunt repellat aut voluptas hic dolorem sequi ab porro, quia error.</p>
-                          <div class="map_bind">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592.2583556378115!2d107.07461703354939!3d10.583150068786368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175123ae227e8a1%3A0x3266cc7ff1daf036!2zxJDGsOG7nW5nIHPhu5EgMywgUGjDuiBN4bu5LCBUw6JuIFRow6BuaCwgQsOgIFLhu4thIC0gVsWpbmcgVMOgdSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1722781090275!5m2!1sen!2s" width="100%" height="450" frameborder="0"style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-  
-
-    </section>
-  <!-- Site footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-       <a href="#">Scanfcode</a>.
-          </p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
-        </div>
-      </div>
-    </div>
-</footer>
 
     <!-- add js files -->
+    <script src="./js/nav.js"></script>
     <script src="./js/booking.js"></script>
   </body>
 </html>
